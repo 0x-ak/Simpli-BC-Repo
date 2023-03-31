@@ -1,0 +1,47 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "setStatus",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"class-work/enumSample.sol": "enumSample"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"class-work/enumSample.sol": {
+			"keccak256": "0xb21b288df11aa527487704a99bb4dc3e33527b4ab4272eb4340efd570589bb2b",
+			"urls": [
+				"bzz-raw://9e6b2cc1d38bb610611e291ed7fd110406e97e29acc5c1a0817344a9d98c8f65",
+				"dweb:/ipfs/QmfQg5VwZzjenzuAnGobLWFxqdfrZuUDjck7w7yJzm7V4b"
+			]
+		}
+	},
+	"version": 1
+}
