@@ -6,6 +6,27 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "Simplilearn",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [
 					{
@@ -24,6 +45,32 @@
 					{
 						"internalType": "uint8",
 						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "learners",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "age",
 						"type": "uint8"
 					}
 				],
@@ -66,7 +113,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"class-work/structSample.sol": "structSample"
+			"class-work/structSampleB.sol": "structSample"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -77,11 +124,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"class-work/structSample.sol": {
-			"keccak256": "0x548cc26b02f445f819e3a57bb784e2750f4c30513eb73447ffa58351fa905972",
+		"class-work/structSampleB.sol": {
+			"keccak256": "0xc9d7378133e19e386b5a7c760bd7885f9d46b2ca3913798df413f7760ffe0b9b",
 			"urls": [
-				"bzz-raw://8ae21dcf67ac3125726a369c92b1f5864ce3962a616ed12ff1e8787e9cb75458",
-				"dweb:/ipfs/QmPyhG17QzcT8T6EgNqWwQEw93ciedfy29ZvPJmnoDdtpk"
+				"bzz-raw://b104efe75c5452d0e34b648a3789d1a4edf6e2ed4e175b5a5d6fee70a3afdf11",
+				"dweb:/ipfs/QmacbgkwAvbkwtQSMBkhihs37SECybPdRti47AH2RYE8he"
 			]
 		}
 	},
