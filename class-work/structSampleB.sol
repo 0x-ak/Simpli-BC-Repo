@@ -3,6 +3,9 @@ pragma solidity ^0.5.12;
 contract structSample {
     address public Simplilearn;
 
+    //eent
+    event newLearner (string indexed _name,uint8 _a);
+
     constructor() public {
         //Simplilearn=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
         Simplilearn = msg.sender;
@@ -32,6 +35,9 @@ contract structSample {
         //learners[1].age=40
         learners[_key].name = _name;
         learners[_key].age = _age;
+
+        //emit the event
+         emit newLearner(_name,_age);
     }
 
     function getLearnerDetails(uint8 _key)

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "retunvalue",
+						"type": "bool"
+					}
+				],
+				"name": "priceEvent",
+				"type": "event"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "bid",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"class-work/contractAlert.sol": "ValueAlert"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"class-work/contractAlert.sol": {
+			"keccak256": "0x5beb2b691fb30024ceff185c7f195bb3fed86fb13041dbb5cef6bd6635b3abea",
+			"urls": [
+				"bzz-raw://c9b9f9bb34f5beee39e22cc8c0c27af09b2f2ea9c93bc042a31bde7ba36086fa",
+				"dweb:/ipfs/QmUZLSBqmX73RDeggt5ob1UrsjbMqUTMKF9JrWoopSaq3J"
+			]
+		}
+	},
+	"version": 1
+}

@@ -12,6 +12,25 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "_a",
+						"type": "uint8"
+					}
+				],
+				"name": "newLearner",
+				"type": "event"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "Simplilearn",
@@ -125,10 +144,10 @@
 	},
 	"sources": {
 		"class-work/structSampleB.sol": {
-			"keccak256": "0xc9d7378133e19e386b5a7c760bd7885f9d46b2ca3913798df413f7760ffe0b9b",
+			"keccak256": "0xe6ccfca50884c6ccf2d6d80a3135e51450524e0fd57675152934315cb5b1dbbc",
 			"urls": [
-				"bzz-raw://b104efe75c5452d0e34b648a3789d1a4edf6e2ed4e175b5a5d6fee70a3afdf11",
-				"dweb:/ipfs/QmacbgkwAvbkwtQSMBkhihs37SECybPdRti47AH2RYE8he"
+				"bzz-raw://0ce6355bf94a1300c730c52d63248b6860feee6f8d093e88ace4a02aeeb8e260",
+				"dweb:/ipfs/QmTtHhuMJ6GjoyjQpn7beocsrCUqjYbJ261bHZXMCoF6FA"
 			]
 		}
 	},

@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "a",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "b",
+						"type": "int256"
+					}
+				],
+				"name": "div",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"class-work/librarySample.sol": "LibrarySample"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"class-work/librarySample.sol": {
+			"keccak256": "0xf99f0a6ca75fd9ef8f214f6840f981848fefa99b351c67dff66f839d9f365c1e",
+			"urls": [
+				"bzz-raw://023eb8f177851f8474caa9ca52cb2392cabb0b1eece7201713452ab5ca504976",
+				"dweb:/ipfs/QmYwVycQ22khMEdNyWc9CEz5NxYiq8csMkHhLqo9EqupCb"
+			]
+		}
+	},
+	"version": 1
+}
