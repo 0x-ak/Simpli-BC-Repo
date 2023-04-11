@@ -1,0 +1,445 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_doctorId",
+						"type": "uint256"
+					}
+				],
+				"name": "newDoctorEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_patientId",
+						"type": "uint256"
+					}
+				],
+				"name": "newPatientEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_expiryDate",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dose",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "addMedicine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_disease",
+						"type": "string"
+					}
+				],
+				"name": "addNewDisease",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_patient",
+						"type": "address"
+					}
+				],
+				"name": "prescribeMedicine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_qualification",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_workPlace",
+						"type": "string"
+					}
+				],
+				"name": "registerDoctor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_age",
+						"type": "uint32"
+					}
+				],
+				"name": "registerPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					}
+				],
+				"name": "updateAge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "viewDoctorById",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "qualification",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "add",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "viewMedicine",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "expiryDate",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dose",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "viewPatientById",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "disease",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patient",
+						"type": "address"
+					}
+				],
+				"name": "viewPrescribedMedicines",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ids",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "viewRecord",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "disease",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addMedicine(uint256,string,string,uint256,uint256)": {
+					"params": {
+						"_dose": "Dose prescribed to the patient",
+						"_expiryDate": "ExpiryDate of the medicine",
+						"_id": "Id of the medicine",
+						"_name": "name of the medicine",
+						"_price": "Price of the medicine "
+					}
+				},
+				"addNewDisease(string)": {
+					"params": {
+						"_disease": "Name of the disease"
+					}
+				},
+				"prescribeMedicine(uint256,address)": {
+					"params": {
+						"_id": "Medicine Id",
+						"_patient": "address of the patient"
+					}
+				},
+				"registerDoctor(string,string,string)": {
+					"params": {
+						"_name": "Name of the doctor",
+						"_qualification": "Which degree he/she holds as a doctor",
+						"_workPlace": "Address of his/her hospital/clinic"
+					}
+				},
+				"registerPatient(string,uint32)": {
+					"params": {
+						"_age": "Age of user",
+						"_name": "Name of the user"
+					}
+				},
+				"updateAge(uint256)": {
+					"params": {
+						"_age": "New age of the patient"
+					}
+				},
+				"viewDoctorById(uint256)": {
+					"params": {
+						"_id": "ID of the doctor"
+					},
+					"returns": {
+						"add": "Address of his/her hospital/clinic",
+						"id": "ID of the doctor",
+						"name": "Name of the doctor",
+						"qualification": "Name of degree he/she holds as a doctor"
+					}
+				},
+				"viewMedicine(uint256)": {
+					"params": {
+						"_id": "Id of the medicine"
+					},
+					"returns": {
+						"dose": "Dose prescribed for the medicine",
+						"expiryDate": "Expiry date of the medicine",
+						"name": "Name of the medicine",
+						"price": "Price of the medicine"
+					}
+				},
+				"viewPatientById(uint256)": {
+					"params": {
+						"_id": "ID of the patient"
+					},
+					"returns": {
+						"age": "Age of the patient",
+						"disease": "All the diseases of the patient",
+						"id": "ID of the patient",
+						"name": "Name of the patient"
+					}
+				},
+				"viewPrescribedMedicines(address)": {
+					"details": "View prescribed medicines to the patient ",
+					"params": {
+						"_patient": "address of the patient"
+					},
+					"returns": {
+						"ids": "list of medicine id's"
+					}
+				},
+				"viewRecord()": {
+					"returns": {
+						"age": "Age of the patient",
+						"disease": "All the diseases of the patient",
+						"id": "Id of the patient",
+						"name": "Name of the patient"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"capstone/HospitalContract.sol": "HospitalContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"capstone/HospitalContract.sol": {
+			"keccak256": "0xa3042706bf9e02fa8fd4ac52f0d1ac31af47717ee6dc305f157c392dd338c3c4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c97236cf50b846b73d9af0406f99ce89c7c0162b9957a0c604fdf62224316710",
+				"dweb:/ipfs/QmNxMyZ57K9zGbh7nGaCAijVWhaHnxma6aJBKbLAwopiCJ"
+			]
+		}
+	},
+	"version": 1
+}
